@@ -4,7 +4,7 @@ The Home Work has to be delievered before 9AM ⚠️
 ## A polished Marvel movies app that uses a `RecyclerView` and `Retrofit` to display a list of marvels movies from REST API  via internet. Each card contains an movie name and bio text.
 
 ## You will display the movie name and bio text for each movie within a card, using the `MaterialCardView` widget from the Material Components for Android library.
-And you can use this `https://simplifiedcoding.net/demos/marvel` url to receive marvel movies list from internet.
+## And you can use this `https://simplifiedcoding.net/demos/marvel` url to receive marvel movies list from internet.
 
 # Bonus Challenge 🔥
 ## Display all information about the movie:
