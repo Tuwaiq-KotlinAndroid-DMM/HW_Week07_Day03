@@ -11,6 +11,7 @@
         android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,11 +25,19 @@
             android:orientation="vertical"
             android:padding="20dp">
 
+            <ImageView
+                android:id="@+id/image_movie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:srcCompat="@tools:sample/avatars" />
+
             <TextView
                 android:id="@+id/name_movie"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:gravity="center"
+                android:text="TextView"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/realname_movie"
@@ -52,7 +61,6 @@
                 android:id="@+id/createdBy_movie"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
                 android:text="TextView" />
 
             <TextView
@@ -65,14 +73,8 @@
                 android:id="@+id/bio_movie"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
                 android:text="TextView" />
 
-            <ImageView
-                android:id="@+id/image_movie"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                tools:srcCompat="@tools:sample/avatars" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
