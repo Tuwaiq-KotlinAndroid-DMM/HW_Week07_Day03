@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="sa.edu.twuaiq.hw_week07_day03">
+    package="com.example.hw_week7day3">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -8,7 +9,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.HW_Week07_Day03">
+        android:theme="@style/Theme.HW_Week7Day3">
         <activity
             android:name=".MainActivity"
             android:exported="true">
