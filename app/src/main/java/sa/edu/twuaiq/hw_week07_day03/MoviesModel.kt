@@ -3,6 +3,7 @@ package sa.edu.twuaiq.hw_week07_day03
 
 import com.google.gson.annotations.SerializedName
 
+// this data class contains the data of json
 data class MoviesModel(
     @SerializedName("bio")
     val bio: String,

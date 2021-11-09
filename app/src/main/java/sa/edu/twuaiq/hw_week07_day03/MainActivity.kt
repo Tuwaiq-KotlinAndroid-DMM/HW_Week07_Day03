@@ -17,10 +17,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-
+// calling the recyclerview and assigning its adapter to it
         val recyclerview: RecyclerView = findViewById(R.id.movies_recyclerview)
         val moviesAdapter = MoviesAdapter(movies)
-
         recyclerview.adapter = moviesAdapter
 
 
@@ -33,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         // build the API
 
         val moviesAPI = retrofit.create(IMoviesAPI:: class.java)
-
+// using the API function to display the enqueue
         moviesAPI.getMovieList().enqueue(object: Callback<List<MoviesModel>>{
 
             override fun onResponse(
@@ -41,6 +40,8 @@ class MainActivity : AppCompatActivity() {
                 response: Response<List<MoviesModel>>,
             ) {
                 response.body()?.run {
+
+                    //adding tne elements to the list
                     movies.addAll(this)
                     moviesAdapter.notifyDataSetChanged()
                 }

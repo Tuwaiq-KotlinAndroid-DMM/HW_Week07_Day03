@@ -8,5 +8,6 @@ interface IMoviesAPI {
 
     @GET("/demos/marvel/")
 
+    //function to get the movies from json
     fun getMovieList(): Call<List<MoviesModel>>
 }

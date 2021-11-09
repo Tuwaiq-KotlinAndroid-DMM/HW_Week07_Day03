@@ -16,7 +16,7 @@ class MoviesAdapter(private val list: List<MoviesModel>) :
     RecyclerView.Adapter<MoviesAdapter.MoviesViewHolder>() {
 
     class MoviesViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-
+//getting the item_layout views
         val nameTv: TextView = itemView.findViewById(R.id.tv_movie_name)
         val realNameTv: TextView = itemView.findViewById(R.id.tv_movie_realname)
         val teamTv: TextView = itemView.findViewById(R.id.tv_movie_team)
@@ -44,7 +44,7 @@ class MoviesAdapter(private val list: List<MoviesModel>) :
 
     override fun onBindViewHolder(holder: MoviesViewHolder, position: Int) {
         val item = list[position]
-
+// assigning the data
         holder.nameTv.text = item.name
         holder.realNameTv.text = item.name
         holder.teamTv.text = item.team
@@ -52,7 +52,7 @@ class MoviesAdapter(private val list: List<MoviesModel>) :
         holder.createdByTv.text = item.createdby
         holder.publishedTv.text = item.publisher
         holder.bioTv.text = item.bio
-
+ // attaching the image using picasso
         Picasso.get().load(item.imageurl).into(holder.moviesImage)
 
     }
