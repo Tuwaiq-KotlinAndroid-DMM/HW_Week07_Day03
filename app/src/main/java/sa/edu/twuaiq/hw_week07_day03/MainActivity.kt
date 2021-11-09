@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
                     movies.addAll(this)
                     moviesAapter.notifyDataSetChanged()
 
+
                 }
             }
 

@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import com.google.gson.annotations.SerializedName
 import com.squareup.picasso.Picasso
 
 class RecyclerViewMovieAdapter(private val list: List<MovieModel>) :
@@ -28,6 +29,9 @@ class RecyclerViewMovieAdapter(private val list: List<MovieModel>) :
     }
 
     override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
+
+
+
 
         val item = list[position]
         holder.nameTextView.text = item.name
