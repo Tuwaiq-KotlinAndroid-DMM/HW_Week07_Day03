@@ -32,8 +32,8 @@
 
         <ImageView
             android:id="@+id/marvel_imageView"
-            android:layout_width="171dp"
-            android:layout_height="258dp"
+            android:layout_width="160dp"
+            android:layout_height="227dp"
             android:layout_marginBottom="28dp"
             app:layout_constraintBottom_toTopOf="@+id/realnameTextview"
             app:layout_constraintEnd_toEndOf="parent"
