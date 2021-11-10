@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 
 class ProductsRecyclerViewAdapter(private val list: List<ProductModelItem>) :
     RecyclerView.Adapter<ProductsRecyclerViewAdapter.ProductViewHolder>() {
@@ -35,7 +36,7 @@ class ProductsRecyclerViewAdapter(private val list: List<ProductModelItem>) :
         holder.productPublisher.text = item.publisher
         holder.productBio.text = item.bio
         holder.productTeam.text = item.team
-
+        Picasso.get().load(item.imageurl).into(holder.productImageView)
 
 
 
@@ -55,7 +56,7 @@ class ProductsRecyclerViewAdapter(private val list: List<ProductModelItem>) :
         val productPublisher: TextView = itemView.findViewById(R.id.product_publisher)
         val productBio: TextView = itemView.findViewById(R.id.product_bio)
         val productTeam: TextView = itemView.findViewById(R.id.product_team)
-        val productImageView: ImageView = itemView.findViewById(R.id.imageView)
+        val productImageView: ImageView = itemView.findViewById(R.id.product_image_view)
     }
 
 }
